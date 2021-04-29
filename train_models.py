@@ -110,7 +110,7 @@ if not os.path.isdir('models'):
     os.makedirs('models')
 
 #train(CIFAR(), "models/cifar", [64, 64, 128, 128, 256, 256], num_epochs=50)
-train(MNIST(), "models/mnist/mnist.h5", [32, 32, 64, 64, 200, 200], num_epochs=1)
+train(MNIST(), "models/mnist/mnist.h5", [32, 32, 64, 64, 200, 200], num_epochs=50)
 
 #train_distillation(MNIST(), "models/mnist-distilled-100", [32, 32, 64, 64, 200, 200],
  #                  num_epochs=50, train_temp=100)
