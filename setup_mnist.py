@@ -91,7 +91,7 @@ class MNISTModel:
         if use_log:
             model.add(Activation('softmax'))
         if restore:
-            model.load_weights(restore)
+            model.load_weights(restore + "/variables")
 
         self.model = model
 
