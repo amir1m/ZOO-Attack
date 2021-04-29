@@ -93,7 +93,7 @@ class MNISTModel:
         if use_log:
             model.add(Activation('softmax'))
         if restore:
-            model.load_model(restore + "/mnist.h5")
+            model = load_model(restore + "/mnist.h5")
 
         self.model = model
 
